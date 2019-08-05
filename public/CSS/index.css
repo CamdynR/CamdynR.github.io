@@ -93,15 +93,22 @@ body {
     #header,
     #subtitle {
         text-align: center !important;
+        float: none !important;
     }
     #profilePhoto {
         float: none !important;
         margin: 0 auto;
     }
     .profiles {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        margin-top: 90px !important;
         float: none !important;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    #title {
+        margin-top: 8px;
+    }
+    #header {
+        height: 400px;
     }
 }

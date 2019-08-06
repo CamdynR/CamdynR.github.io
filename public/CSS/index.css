@@ -9,18 +9,19 @@ a:focus {
 }
 
 html {
-    color: white;
-    font-family: 'Libre Caslon Text', serif;
+    color: rgb(60, 60, 60);
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Quicksand', sans-serif;
+    font-weight: 500;*/
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #dae3e7;
     margin: 0;
     padding: 0;
 }
 
 #header {
-    /*border: 1px solid red;*/
     height: 200px;
     margin: 0 auto;
     max-width: 1000px;
@@ -28,14 +29,16 @@ body {
 }
 
 #headerBackground {
-    background-color: #8AAAE5;
+    background-color: #f5f5f5;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #title {
-    filter: drop-shadow(0px 3px 1px rgb(0, 0, 0, 0.5));
+    /*filter: drop-shadow(0px 3px 1px rgb(0, 0, 0, 0.5));*/
+    color: #49515a;
     font-size: 3rem;
     float: left;
     margin-top: 20px;
@@ -48,35 +51,100 @@ body {
     margin-left: 4px;
 }
 
-#canvas {
-    border: 1px solid blue;
-    max-width: 1000px;
-    margin: 0 auto;
-    height: 875px;
-    width: 80%;
-}
-
 #profilePhoto {
     float: left;
     height: 200px;
     width: 200px;
     margin-right: 30px;
+    transition: transform .2s;
+}
+
+#profilePhoto:hover {
+    transform: scale(1.07);
 }
 
 .profiles {
     float: left;
     height: 45px;
     width: 45px;
-    margin-left: -450px;
+    margin-left: -472px;
     margin-top: 65px;
+    transition: transform .2s;
 }
 
 .profiles:hover {
-    filter: brightness(90%);
+    transform: scale(1.15);
 }
 
 #github {
-    margin-left: -395px;
+    margin-left: -417px;
+}
+
+#canvas {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 875px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 20px;
+}
+
+.gridCell {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.cellTitle {
+    color: #545e69;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#aboutMe {
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+#projects {
+    grid-row: 2/4;
+    grid-column: 1/3;
+}
+
+#workExperience {
+    grid-row: 4/7;
+    grid-column: 1/3;
+}
+
+#personalInfo {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#education {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#technicalSkills {
+    grid-row: 3/5;
+    grid-column: 3;
+}
+
+.content {
+    width: 95%;
+    margin-left: 15px;
+}
+
+#college {
+    font-weight: 900;
+}
+
+#minor {
+    margin-top: -5px;
 }
 
 @media only screen and (max-width: 857px) {
@@ -85,6 +153,37 @@ body {
     }
     #header {
         height: 380px;
+    }
+    #headerBackground {
+        margin-bottom: 20px !important;
+    }
+    #canvas {
+        grid-gap: 10px !important;
+        width: 90% !important;
+    }
+    #aboutMe {
+        grid-row: 1 !important;
+        grid-column: 1/4 !important;
+    }
+    #projects {
+        grid-row: 2/4 !important;
+        grid-column: 1/4 !important;
+    }
+    #workExperience {
+        grid-row: 4/7 !important;
+        grid-column: 1/4 !important;
+    }
+    #personalInfo {
+        grid-row: 7 !important;
+        grid-column: 1/4 !important;
+    }
+    #education {
+        grid-row: 8 !important;
+        grid-column: 1/4 !important;
+    }
+    #technicalSkills {
+        grid-row: 9/11 !important;
+        grid-column: 1/4 !important;
     }
 }
 
@@ -101,14 +200,48 @@ body {
     }
     .profiles {
         float: none !important;
+        margin: 0 auto !important;
     }
 }
 
-@media only screen and (max-width: 567px) {
+@media only screen and (max-width: 568px) {
     #title {
+        font-size: 2.5rem;
         margin-top: 8px;
+        margin-bottom: -2px;
+    }
+    #subtitle {
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
     #header {
-        height: 400px;
+        height: 390px;
+    }
+    .profiles {
+        margin-top: -18px !important;
+    }
+    #headerBackground {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 473px) {
+    #title {
+        font-size: 2.5rem;
+        margin-top: 8px;
+        margin-bottom: -2px;
+    }
+    #subtitle {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    #header {
+        height: 435px;
+    }
+    .profiles {
+        margin-top: -18px !important;
+    }
+    #headerBackground {
+        margin-top: 15px;
     }
 }

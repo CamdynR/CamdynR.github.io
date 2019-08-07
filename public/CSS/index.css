@@ -475,11 +475,17 @@ ul {
 /* Media query for most phones and smaller devices */
 
 @media only screen and (max-width: 510px) {
+    #aboutMeContent {
+        text-align: left;
+    }
     #header {
         height: 435px;
     }
     #headerBackground {
         margin-top: 15px;
+    }
+    #listOfProjects {
+        margin-left: -10px;
     }
     #subtitle {
         margin-bottom: 30px;

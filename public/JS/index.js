@@ -7,7 +7,7 @@ window.onload = function() {
     move("cplusplusBar", 80, 5);
     move("javaBar", 80, 5);
     move("photoshopBar", 100, 4);
-    move("illustratorBar", 50, 8);
+    move("nodeBar", 50, 8);
 }
 
 // Moves the Progress Bars for Skills

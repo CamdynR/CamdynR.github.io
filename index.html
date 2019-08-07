@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="public/CSS/index.css" rel="stylesheet">
-    <!-- link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
@@ -40,8 +39,8 @@
             <ul id="listOfProjects">
                 <li id="pokemonBattleAssistant" class="project">
                     <a href="https://pokemon-battle-assistant.herokuapp.com/" target="_blank">
-                        <img class="banner largeImage" src="assets/images/pokeballBanner.png" />
-                        <img class="banner mobile" src="assets/images/pokeballBannerMobile.png" />
+                        <img class="banner largeImage" src="assets/images/pokeballBanner.jpg" />
+                        <img class="banner mobile" src="assets/images/pokeballBannerMobile.jpg" />
                     </a>
                     <ul id="pbaList" class="projectDesc">
                         <li style="margin-bottom: 10px;">Utilized Node.js and Google's Firebase to create a web application that helps users choose which move to use in a Pokémon battle.
@@ -52,8 +51,8 @@
                 </li>
                 <li id="BothSidesWebApp" class="project">
                     <a href="https://github.com/CamdynR/Cogs121/tree/master/static_files" target="_blank">
-                        <img class="banner lowerBanner largeImage" src="assets/images/bothSidesBanner.png" />
-                        <img class="banner lowerBanner mobile" src="assets/images/bothSidesBannerMobile.png" />
+                        <img class="banner lowerBanner largeImage" src="assets/images/bothSidesBanner.jpg" />
+                        <img class="banner lowerBanner mobile" src="assets/images/bothSidesBannerMobile.jpg" />
                     </a>
                     <ul id="bothSidesList" class="projectDesc">
                         <li>Helped create a Node.js web app that uses News API and Google's Firebase to provide users with left leaning and right leaning articles for every major headline.
@@ -62,8 +61,8 @@
                 </li>
                 <li id="tweetMashingBot" class="project">
                     <a href="https://github.com/CamdynR/Twitter-Bot" target="_blank">
-                        <img class="banner lowerBanner largeImage" src="assets/images/twitterBanner.png" />
-                        <img class="banner lowerBanner mobile" src="assets/images/twitterBannerMobile.png" />
+                        <img class="banner lowerBanner largeImage" src="assets/images/twitterBanner.jpg" />
+                        <img class="banner lowerBanner mobile" src="assets/images/twitterBannerMobile.jpg" />
                     </a>
                     <ul id="tweetList" class="projectDesc">
                         <li>Used Python and the Twitter API to create a bot that pulls tweets from multiple accounts and splices them together.
@@ -126,8 +125,49 @@
         </div>
         <div id="technicalSkills" class="gridCell">
             <p class="cellTitle" id="skillsTitle">Technical Skills</p>
+            <ul id="skillsList">
+                <li id="htmlSkill">
+                    <p class="skillName"><b>HTML/CSS</b></p>
+                    <div id="htmlProgress" class="progressBar pushBottom">
+                        <div id="htmlBar" class="bar"></div>
+                    </div>
+                </li>
+                <li id="javascriptSkill">
+                    <p class="skillName"><b>Javascript</b></p>
+                    <div id="javascriptProgress" class="progressBar pushBottom">
+                        <div id="javascriptBar" class="bar"></div>
+                    </div>
+                </li>
+                <li id="cplusplusSkill">
+                    <p class="skillName"><b>C++</b></p>
+                    <div id="cplusplusProgress" class="progressBar pushBottom">
+                        <div id="cplusplusBar" class="bar"></div>
+                    </div>
+                </li>
+                <li id="javaSkill">
+                    <p class="skillName"><b>Java</b></p>
+                    <div id="javaProgress" class="progressBar pushBottom">
+                        <div id="javaBar" class="bar"></div>
+                    </div>
+                </li>
+                <li id="photoshopSkill">
+                    <p class="skillName"><b>Adobe Photoshop</b></p>
+                    <div id="photoshopProgress" class="progressBar pushBottom">
+                        <div id="photoshopBar" class="bar"></div>
+                    </div>
+                </li>
+                <li id="illustratorSkill">
+                    <p class="skillName"><b>Adobe Illustrator</b></p>
+                    <div id="illustratorProgress" class="progressBar">
+                        <div id="illustratorBar" class="bar"></div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
+
+    <!-- Linking the Javascript file for the Skills Animation -->
+    <script type="text/javascript" src="public/JS/index.js"></script>
 </body>
 
 </html>

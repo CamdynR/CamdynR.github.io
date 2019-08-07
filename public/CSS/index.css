@@ -296,6 +296,35 @@ ul {
     display: none;
 }
 
+.progressBar {
+    width: 90%;
+    margin-top: -10px;
+    margin-left: 2px;
+    background-color: #e8e8e8;
+    border-radius: 2px;
+}
+
+.pushBottom {
+    margin-bottom: 30px;
+}
+
+.bar {
+    width: 1%;
+    height: 20px;
+    background-color: #3baa7d;
+    border-radius: 2px;
+}
+
+#skillsList {
+    margin-left: -20px;
+    margin-bottom: -220px;
+}
+
+.skillName {
+    color: #778492;
+    font-size: 1rem;
+}
+
 
 /* Media Queries Below*/
 
@@ -307,6 +336,18 @@ ul {
     }
     #workExperience {
         margin-bottom: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 1169px) {
+    #skillsList {
+        margin-bottom: -180px;
+    }
+}
+
+@media only screen and (max-width: 1091px) {
+    #skillsList {
+        margin-bottom: -140px;
     }
 }
 
@@ -369,6 +410,9 @@ ul {
     #personalInfoList {
         margin-top: 25px !important;
         margin-bottom: 35px !important;
+    }
+    #skillsList {
+        margin-bottom: 40px;
     }
 }
 

@@ -1,3 +1,6 @@
+// Executes the move function once for each 
+// progress bar when the user first loads the 
+// website
 window.onload = function() {
     move("htmlBar", 100, 4);
     move("javascriptBar", 50, 8);

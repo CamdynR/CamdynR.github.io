@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- Main Header -->
     <div id="headerBackground">
         <div id="header">
             <img src="assets/images/profilePhoto.png" id="profilePhoto" />
@@ -26,7 +27,11 @@
             </a>
         </div>
     </div>
+
+    <!-- Main content set up in a grid -->
     <div id="canvas">
+
+        <!-- About Me -->
         <div id="aboutMe" class="gridCell">
             <p class="cellTitle">About Me</p>
             <p id="aboutMeContent" class="content">
@@ -34,11 +39,15 @@
                 I've fallen in love with not just Web Development, but Front-End Development as a whole. Currently, I am the Webmaster of the UC San Diego Bookstore and I am looking for a full-time job as a Front-End developer.
             </p>
         </div>
+
+        <!-- Projects (With banners as links) -->
         <div id="projects" class="gridCell">
             <p class="cellTitle">Projects</p>
             <ul id="listOfProjects">
                 <li id="pokemonBattleAssistant" class="project">
                     <a href="https://pokemon-battle-assistant.herokuapp.com/" target="_blank">
+                        <!-- Top image is the large banner for desktop, bottom is a smaller version
+                             for mobile -->
                         <img class="banner largeImage" src="assets/images/pokeballBanner.jpg" />
                         <img class="banner mobile" src="assets/images/pokeballBannerMobile.jpg" />
                     </a>
@@ -51,6 +60,8 @@
                 </li>
                 <li id="BothSidesWebApp" class="project">
                     <a href="https://github.com/CamdynR/Cogs121/tree/master/static_files" target="_blank">
+                        <!-- Top image is the large banner for desktop, bottom is a smaller version
+                             for mobile -->
                         <img class="banner lowerBanner largeImage" src="assets/images/bothSidesBanner.jpg" />
                         <img class="banner lowerBanner mobile" src="assets/images/bothSidesBannerMobile.jpg" />
                     </a>
@@ -61,6 +72,8 @@
                 </li>
                 <li id="tweetMashingBot" class="project">
                     <a href="https://github.com/CamdynR/Twitter-Bot" target="_blank">
+                        <!-- Top image is the large banner for desktop, bottom is a smaller version
+                             for mobile -->
                         <img class="banner lowerBanner largeImage" src="assets/images/twitterBanner.jpg" />
                         <img class="banner lowerBanner mobile" src="assets/images/twitterBannerMobile.jpg" />
                     </a>
@@ -71,6 +84,8 @@
                 </li>
             </ul>
         </div>
+
+        <!-- Work Experience -->
         <div id="workExperience" class="gridCell">
             <p class="cellTitle">Work Experience</p>
             <ul id="workExperienceList">
@@ -103,6 +118,8 @@
                 </li>
             </ul>
         </div>
+
+        <!-- Personal Info -->
         <div id="personalInfo" class="gridCell">
             <p class="cellTitle" id="infoTitle">Personal Info</p>
             <ul id="personalInfoList">
@@ -114,6 +131,8 @@
                 <li id="resume"><a id="resumeLink" href="assets/files/Camdyn Rasque - Resume.pdf" target="_blank">View Resume</a></li>
             </ul>
         </div>
+
+        <!-- Education -->
         <div id="education" class="gridCell">
             <p id="educationTitle" class="cellTitle">Education</p>
             <img id="gradHat" src="assets/images/college.png" />
@@ -123,42 +142,56 @@
                 <li id="major"><b>UC San Diego</b> - <span style="color:#6b6b6b;font-size:1rem;">June 2020</span></li>
             </ul>
         </div>
+
+        <!-- Technical Skills -->
         <div id="technicalSkills" class="gridCell">
             <p class="cellTitle" id="skillsTitle">Technical Skills</p>
             <ul id="skillsList">
                 <li id="htmlSkill">
                     <p class="skillName"><b>HTML/CSS</b></p>
+                    <!-- Outer gray bar -->
                     <div id="htmlProgress" class="progressBar pushBottom">
+                        <!-- Inner green bar -->
                         <div id="htmlBar" class="bar"></div>
                     </div>
                 </li>
                 <li id="javascriptSkill">
                     <p class="skillName"><b>Javascript</b></p>
+                    <!-- Outer gray bar -->
                     <div id="javascriptProgress" class="progressBar pushBottom">
+                        <!-- Inner green bar -->
                         <div id="javascriptBar" class="bar"></div>
                     </div>
                 </li>
                 <li id="cplusplusSkill">
                     <p class="skillName"><b>C++</b></p>
+                    <!-- Outer gray bar -->
                     <div id="cplusplusProgress" class="progressBar pushBottom">
+                        <!-- Inner green bar -->
                         <div id="cplusplusBar" class="bar"></div>
                     </div>
                 </li>
                 <li id="javaSkill">
                     <p class="skillName"><b>Java</b></p>
+                    <!-- Outer gray bar -->
                     <div id="javaProgress" class="progressBar pushBottom">
+                        <!-- Inner green bar -->
                         <div id="javaBar" class="bar"></div>
                     </div>
                 </li>
                 <li id="photoshopSkill">
                     <p class="skillName"><b>Adobe Photoshop</b></p>
+                    <!-- Outer gray bar -->
                     <div id="photoshopProgress" class="progressBar pushBottom">
+                        <!-- Inner green bar -->
                         <div id="photoshopBar" class="bar"></div>
                     </div>
                 </li>
                 <li id="illustratorSkill">
                     <p class="skillName"><b>Adobe Illustrator</b></p>
+                    <!-- Outer gray bar -->
                     <div id="illustratorProgress" class="progressBar">
+                        <!-- Inner green bar -->
                         <div id="illustratorBar" class="bar"></div>
                     </div>
                 </li>

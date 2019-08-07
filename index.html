@@ -20,10 +20,10 @@
             <p id="title">CAMDYN RASQUE</p>
             <p id="subtitle">Webmaster, aspiring Front-End Developer</p>
             <a target="_blank" href="https://www.linkedin.com/in/camdyn-rasque/">
-                <img id="linkedIn" class="profiles" src="assets/images/linkedin1.png" />
+                <img id="linkedIn" class="profiles" src="assets/images/linkedin.png" />
             </a>
             <a target="_blank" href="https://github.com/CamdynR">
-                <img id="github" class="profiles" src="assets/images/github-logo1.png" />
+                <img id="github" class="profiles" src="assets/images/github-logo.png" />
             </a>
         </div>
     </div>
@@ -39,8 +39,10 @@
             <p class="cellTitle">Projects</p>
             <ul id="listOfProjects">
                 <li id="pokemonBattleAssistant" class="project">
-                    <!-- img id="pokeball" src="assets/images/pokeball.png" / -->
-                    <p id="pbaTitle" class="projectTitle">Pokémon Battle Assistant</p>
+                    <a href="https://pokemon-battle-assistant.herokuapp.com/" target="_blank">
+                        <img class="banner largeImage" src="assets/images/pokeballBanner.png" />
+                        <img class="banner mobile" src="assets/images/pokeballBannerMobile.png" />
+                    </a>
                     <ul id="pbaList" class="projectDesc">
                         <li style="margin-bottom: 10px;">Utilized Node.js and Google's Firebase to create a web application that helps users choose which move to use in a Pokémon battle.
                         </li>
@@ -49,14 +51,20 @@
                     </ul>
                 </li>
                 <li id="BothSidesWebApp" class="project">
-                    <p id="BothSidesTitle" class="projectTitle">BothSides Web App</p>
+                    <a href="https://github.com/CamdynR/Cogs121/tree/master/static_files" target="_blank">
+                        <img class="banner lowerBanner largeImage" src="assets/images/bothSidesBanner.png" />
+                        <img class="banner lowerBanner mobile" src="assets/images/bothSidesBannerMobile.png" />
+                    </a>
                     <ul id="bothSidesList" class="projectDesc">
                         <li>Helped create a Node.js web app that uses News API and Google's Firebase to provide users with left leaning and right leaning articles for every major headline.
                         </li>
                     </ul>
                 </li>
                 <li id="tweetMashingBot" class="project">
-                    <p id="tweetTitle" class="projectTitle">Tweet Mashing Bot</p>
+                    <a href="https://github.com/CamdynR/Twitter-Bot" target="_blank">
+                        <img class="banner lowerBanner largeImage" src="assets/images/twitterBanner.png" />
+                        <img class="banner lowerBanner mobile" src="assets/images/twitterBannerMobile.png" />
+                    </a>
                     <ul id="tweetList" class="projectDesc">
                         <li>Used Python and the Twitter API to create a bot that pulls tweets from multiple accounts and splices them together.
                         </li>
@@ -66,15 +74,55 @@
         </div>
         <div id="workExperience" class="gridCell">
             <p class="cellTitle">Work Experience</p>
+            <ul id="workExperienceList">
+                <li id="webmaster" class="work">
+                    <p id="webmasterTitle" class="jobTitle"><b>Webmaster</b></p>
+                    <p id="webmasterStore" class="jobStore">UCSD Bookstore (June 2016 - Present)</p>
+                    <ul id="webmasterList" class="jobDesc">
+                        <li class="marginBottom">Used the ASP.NET application framework alongside HTML, CSS, and Javascript to update and maintain the UCSD Bookstore website.</li>
+                        <li class="marginBottom">Prepared and photographed new product arrivals before editing them in Photoshop for client-side use.</li>
+                        <li>Regularly tested website appearance and uniformity across various computer platforms and web browsers.</li>
+                    </ul>
+                </li>
+                <li id="DOthings" class="work">
+                    <p id="DOthingsTitle" class="jobTitle"><b>Web Design Intern</b></p>
+                    <p id="DOthingsStore" class="jobStore">DOthings (June 2018 - August 2018)</p>
+                    <ul id="DOthingsList" class="jobDesc">
+                        <li class="marginBottom">Utilized HTML/CSS to write and develop new prototypes for the client-side landing page.</li>
+                        <li class="marginBottom">Hand sketched and used InDesign to rapidly iterate new wireframes to hone in on a final design.</li>
+                        <li>Used Photoshop to compose and model mock-ups of the final product.</li>
+                    </ul>
+                </li>
+                <li id="bookstore" class="work">
+                    <p id="bookstoreTitle" class="jobTitle"><b>Customer Service Lead</b></p>
+                    <p id="bookstoreStore" class="jobStore">UCSD Bookstore (September 2016 - June 2019)</p>
+                    <ul id="bookstoreList" class="jobDesc">
+                        <li class="marginBottom">Assisted customers with returns, purchases, department charges, or any other obstacle/question they had.</li>
+                        <li class="marginBottom">Trained new cashiers and customer service associates on their various duties and responsibilities.</li>
+                        <li>Stood in as acting manager when the current one is not present.</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <div id="personalInfo" class="gridCell">
             <p class="cellTitle" id="infoTitle">Personal Info</p>
+            <ul id="personalInfoList">
+                <img src="assets/images/location.png" id="locationLogo" class="infoImage" />
+                <li id="location">San Diego, CA</li>
+                <img src="assets/images/email.png" id="emailLogo" class="infoImage" />
+                <li id="email"><a id="emailLink" href="mailto:rasque.camdyn@gmail.com">rasque.camdyn@gmail.com</a></li>
+                <img src="assets/images/resume.png" id="resumeLogo" class="infoImage" />
+                <li id="resume"><a id="resumeLink" href="assets/files/Camdyn Rasque - Resume.pdf" target="_blank">View Resume</a></li>
+            </ul>
         </div>
         <div id="education" class="gridCell">
             <p id="educationTitle" class="cellTitle">Education</p>
-            <p id="college" class="content">University of California, San Diego</p>
-            <p id="major" class="content">B.S. Cognitive Science - Human Computer Interaction&nbsp;(June 2020)</p>
-            <p id="minor" class="content">Minor in Computer Science</p>
+            <img id="gradHat" src="assets/images/college.png" />
+            <ul id="educationList">
+                <li id="college"><b>B.S. Cognitive Science -</b><span style="font-size:1rem;">Human Computer Interaction</span></li>
+                <li id="minor">Minor in Computer Science</li>
+                <li id="major"><b>UC San Diego</b> - <span style="color:#6b6b6b;font-size:1rem;">June 2020</span></li>
+            </ul>
         </div>
         <div id="technicalSkills" class="gridCell">
             <p class="cellTitle" id="skillsTitle">Technical Skills</p>

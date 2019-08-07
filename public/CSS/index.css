@@ -25,7 +25,8 @@ ul {
     list-style-type: none;
 }
 
-.projectDesc {
+.projectDesc,
+.jobDesc {
     list-style-type: disc;
     margin-left: -20px;
     padding-right: 15px;
@@ -108,7 +109,7 @@ ul {
 }
 
 .cellTitle {
-    color: #545e69;
+    color: #545e72;
     font-size: 1.6rem;
     font-weight: 700;
     margin-top: 10px;
@@ -158,14 +159,6 @@ ul {
     line-height: 1.4em;
 }
 
-#college {
-    font-weight: 900;
-}
-
-#minor {
-    margin-top: -5px;
-}
-
 #pokeball {
     display: inline;
     margin-top: -5px;
@@ -175,10 +168,132 @@ ul {
 }
 
 .projectTitle {
-    font-size: 1.3rem;
+    color: #778495;
+    font-size: 1.2rem;
     margin-left: -15px;
     margin-bottom: 10px;
+}
+
+#BothSidesTitle,
+#tweetTitle {
     margin-top: 30px;
+}
+
+.marginBottom {
+    margin-bottom: 10px;
+}
+
+.jobStore {
+    color: #999999;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+#DOthingsTitle,
+#bookstoreTitle {
+    margin-top: 30px;
+}
+
+#workExperienceList {
+    margin-left: -15px;
+    margin-bottom: 20px;
+}
+
+.jobTitle {
+    color: #778495;
+    font-size: 1.2rem;
+}
+
+#college {
+    color: #778492;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#minor {
+    margin-bottom: 8px;
+}
+
+#major,
+#minor {
+    color: #6b6b6b;
+}
+
+#educationList {
+    margin-left: 9px;
+    padding-right: 10px;
+}
+
+#gradHat {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 3px;
+    width: 25px;
+}
+
+.infoImage {
+    margin-left: -33px;
+    position: absolute;
+    width: 20px;
+}
+
+#personalInfoList {
+    margin-top: 35px;
+    margin-left: 8px;
+}
+
+#email,
+#resume {
+    margin-top: 30px;
+}
+
+#emailLink,
+#resumeLink,
+#emailLink:visited,
+#resumeLink:visited {
+    color: #3baa7d;
+}
+
+#emailLink:hover,
+#resumeLink:hover {
+    text-decoration: underline;
+}
+
+#emailLogo,
+#resumeLogo {
+    margin-top: 30px;
+}
+
+#resumeLogo {
+    width: 23px;
+    margin-left: -32px;
+}
+
+.banner {
+    margin-left: -10px;
+    margin-bottom: -10px;
+    border-radius: 5px;
+    width: 97%;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.banner:hover {
+    transform: scale(1.04);
+}
+
+#pbaList,
+#bothSidesList,
+#tweetList {
+    margin-top: 20px;
+}
+
+.lowerBanner {
+    margin-top: 40px;
+}
+
+.mobile {
+    display: none;
 }
 
 
@@ -190,17 +305,19 @@ ul {
     #infoTitle {
         margin-left: 15px;
     }
-    #college,
-    #major,
-    #minor {
-        margin-left: 16px;
-        text-align: left !important;
-    }
-    #minor {
-        margin-bottom: -45px;
-    }
     #workExperience {
         margin-bottom: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 893px) and (max-width: 1147px) {
+    #emailLink {
+        visibility: hidden;
+    }
+    #emailLink:after {
+        margin-left: -225px;
+        visibility: visible;
+        content: "Send email";
     }
 }
 
@@ -249,6 +366,10 @@ ul {
         grid-column: 1/4 !important;
         margin-bottom: 20px !important;
     }
+    #personalInfoList {
+        margin-top: 25px !important;
+        margin-bottom: 35px !important;
+    }
 }
 
 
@@ -272,11 +393,6 @@ ul {
         float: none !important;
         margin: 0 auto !important;
         padding-left: 2px;
-    }
-    #college,
-    #major,
-    #minor {
-        word-spacing: 0.1em;
     }
 }
 
@@ -308,11 +424,15 @@ ul {
     .cellTitle {
         margin-left: 20px !important;
     }
-    #college,
-    #major,
-    #minor {
-        width: 90% !important;
-        word-spacing: 0.1em;
+    .largeImage {
+        display: none !important;
+    }
+    .mobile {
+        display: inline !important;
+    }
+    .projectDesc {
+        margin-left: -25px;
+        padding-right: 20px;
     }
 }
 

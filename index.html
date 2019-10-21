@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -23,22 +23,22 @@
 
 <body>
     <!-- Main Header -->
-    <div id="headerBackground">
+    <header id="headerBackground">
         <div id="header">
-            <img src="assets/images/profilePhoto.png" id="profilePhoto" />
+            <img src="assets/images/profilePhoto.png" id="profilePhoto" alt="Profile Photo of Camdyn"/>
             <p id="title">CAMDYN RASQUE</p>
             <p id="subtitle">Webmaster, aspiring Front-End Developer</p>
             <a target="_blank" href="https://www.linkedin.com/in/camdyn-rasque/">
-                <img id="linkedIn" class="profiles" src="assets/images/linkedin.png" />
+                <img id="linkedIn" class="profiles" src="assets/images/linkedin.png" alt="LinkedIn Logo"/>
             </a>
             <a target="_blank" href="https://github.com/CamdynR">
-                <img id="github" class="profiles" src="assets/images/github-logo.png" />
+                <img id="github" class="profiles" src="assets/images/github-logo.png" alt="GitHub Logo"/>
             </a>
         </div>
-    </div>
+    </header>
 
     <!-- Main content set up in a grid -->
-    <div id="canvas">
+    <main id="canvas">
 
         <!-- About Me -->
         <div id="aboutMe" class="gridCell">
@@ -57,8 +57,8 @@
                     <a href="https://pokemon-battle-assistant.herokuapp.com/" target="_blank">
                         <!-- Top image is the large banner for desktop, bottom is a smaller version
                              for mobile -->
-                        <img class="banner largeImage" src="assets/images/pokeballBanner.jpg" />
-                        <img class="banner mobile" src="assets/images/pokeballBannerMobile.jpg" />
+                        <img class="banner largeImage" src="assets/images/pokeballBanner.jpg" alt="Banner for Pokemon Battle Assistant Project"/>
+                        <img class="banner mobile" src="assets/images/pokeballBannerMobile.jpg" alt="Banner for Pokemon Battle Assistant Project"/>
                     </a>
                     <ul id="pbaList" class="projectDesc">
                         <li style="margin-bottom: 10px;">Utilized Node.js and Google's Firebase to create a web application that helps users choose which move to use in a Pokémon battle.
@@ -71,8 +71,8 @@
                     <a href="https://github.com/CamdynR/Cogs121/tree/master/static_files" target="_blank">
                         <!-- Top image is the large banner for desktop, bottom is a smaller version
                              for mobile -->
-                        <img class="banner lowerBanner largeImage" src="assets/images/bothSidesBanner.jpg" />
-                        <img class="banner lowerBanner mobile" src="assets/images/bothSidesBannerMobile.jpg" />
+                        <img class="banner lowerBanner largeImage" src="assets/images/bothSidesBanner.jpg" alt="Banner for Both Sides Web App"/>
+                        <img class="banner lowerBanner mobile" src="assets/images/bothSidesBannerMobile.jpg" alt="Banner for Both Sides Web App"/>
                     </a>
                     <ul id="bothSidesList" class="projectDesc">
                         <li>Helped create a Node.js web app that uses News API and Google's Firebase to provide users with left leaning and right leaning articles for every major headline.
@@ -83,8 +83,8 @@
                     <a href="https://github.com/CamdynR/Twitter-Bot" target="_blank">
                         <!-- Top image is the large banner for desktop, bottom is a smaller version
                              for mobile -->
-                        <img class="banner lowerBanner largeImage" src="assets/images/twitterBanner.jpg" />
-                        <img class="banner lowerBanner mobile" src="assets/images/twitterBannerMobile.jpg" />
+                        <img class="banner lowerBanner largeImage" src="assets/images/twitterBanner.jpg" alt="Banner for Twitter Bot Project"/>
+                        <img class="banner lowerBanner mobile" src="assets/images/twitterBannerMobile.jpg" alt="Banner for Twitter Bot Project"/>
                     </a>
                     <ul id="tweetList" class="projectDesc">
                         <li>Used Python and the Twitter API to create a bot that pulls tweets from multiple accounts and splices them together.
@@ -132,11 +132,11 @@
         <div id="personalInfo" class="gridCell">
             <p class="cellTitle" id="infoTitle">Personal Info</p>
             <ul id="personalInfoList">
-                <img src="assets/images/location.png" id="locationLogo" class="infoImage" />
+                <img src="assets/images/location.png" id="locationLogo" class="infoImage" alt="Pin on a Map Icon"/>
                 <li id="location">San Diego, CA</li>
-                <img src="assets/images/email.png" id="emailLogo" class="infoImage" />
+                <img src="assets/images/email.png" id="emailLogo" class="infoImage" alt="Envelope email Icon"/>
                 <li id="email"><a id="emailLink" href="mailto:rasque.camdyn@gmail.com">rasque.camdyn@gmail.com</a></li>
-                <img src="assets/images/resume.png" id="resumeLogo" class="infoImage" />
+                <img src="assets/images/resume.png" id="resumeLogo" class="infoImage" alt="Resume Icon"/>
                 <li id="resume"><a id="resumeLink" href="assets/files/Camdyn Rasque - Resume.pdf" target="_blank">View Resume</a></li>
             </ul>
         </div>
@@ -144,7 +144,7 @@
         <!-- Education -->
         <div id="education" class="gridCell">
             <p id="educationTitle" class="cellTitle">Education</p>
-            <img id="gradHat" src="assets/images/college.png" />
+            <img id="gradHat" src="assets/images/college.png" alt="Graduation Hat Icon"/>
             <ul id="educationList">
                 <li id="college"><b>B.S. Cognitive Science -</b><span style="font-size:1rem;">Human Computer Interaction</span></li>
                 <li id="minor">Minor in Computer Science</li>
@@ -206,7 +206,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </main>
 
     <!-- Linking the Javascript file for the Skills Animation -->
     <script type="text/javascript" src="public/JS/index.js"></script>

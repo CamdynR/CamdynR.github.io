@@ -57,7 +57,7 @@
 }
 
 #github {
-  margin-left: -417px;
+  margin-left: -177px;
 }
 
 #gradHat {
@@ -151,7 +151,7 @@
   font-size: 3rem;
   margin-bottom: -15px;
   margin-top: 20px;
-  padding-right: 40px;
+  padding-right: 100px;
 }
 
 #workExperience {
@@ -237,7 +237,7 @@
 .profiles {
   float: left;
   height: 45px;
-  margin-left: -472px;
+  margin-left: -235px;
   margin-top: 65px;
   transition: transform 0.2s;
   width: 45px;
@@ -344,6 +344,9 @@ ul {
     content: "Send email";
     margin-left: -225px;
     visibility: visible;
+  }
+  #title {
+    padding-right: 40px !important;
   }
 }
 

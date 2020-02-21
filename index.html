@@ -1,361 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Camdyn Rasque</title>
-    <meta name="author" content="" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- CSS Page -->
-    <link href="public/CSS/index.css" rel="stylesheet" />
+<head>
+  <meta charset="utf-8" />
+  <title>Camdyn Rasque</title>
+  <meta name="author" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Font (Google's Montserrat) -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+  <!-- CSS Page -->
+  <link href="public/CSS/index.css" rel="stylesheet" />
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
-  </head>
+  <!-- Font (Google's Montserrat) -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
 
-  <body>
-    <!-- Main Header -->
-    <header id="headerBackground">
-      <div id="header">
-        <img
-          src="assets/images/profilePhoto.png"
-          id="profilePhoto"
-          alt="Profile Photo of Camdyn"
-        />
-        <p id="title">CAMDYN RASQUE</p>
-        <p id="subtitle">Front-End Developer</p>
-        <a target="_blank" href="https://www.linkedin.com/in/camdyn-rasque/">
-          <img
-            id="linkedIn"
-            class="profiles"
-            src="assets/images/linkedin.png"
-            alt="LinkedIn Logo"
-          />
-        </a>
-        <a target="_blank" href="https://github.com/CamdynR">
-          <img
-            id="github"
-            class="profiles"
-            src="assets/images/github-logo.png"
-            alt="GitHub Logo"
-          />
-        </a>
-      </div>
-    </header>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+</head>
 
-    <!-- Main content set up in a grid -->
-    <main id="canvas">
-      <!-- About Me -->
-      <div id="aboutMe" class="gridCell">
-        <p class="cellTitle">About Me</p>
-        <p id="aboutMeContent" class="content">
-          I'm a 4th year student pursuing a B.S. in Cognitive Science - Human
-          Computer Interaction with a minor in Computer Science at UC San Diego,
-          and I will be graduating in June 2020. During my time studying at UC
-          San Diego and participating in various projects, I've fallen in love
-          with not just Web Development, but Front-End Development as a whole.
-          Currently, I am the Webmaster of the UC San Diego Bookstore and I am
-          looking for a full-time job as a Front-End developer.
-        </p>
-      </div>
+<body>
+  <!-- Main Header -->
+  <header id="headerBackground">
+    <div id="header">
+      <img src="assets/images/profilePhoto.png" id="profilePhoto" alt="Profile Photo of Camdyn" />
+      <p id="title">CAMDYN RASQUE</p>
+      <p id="subtitle">Front-End Developer</p>
+      <a target="_blank" href="https://www.linkedin.com/in/camdyn-rasque/">
+        <img id="linkedIn" class="profiles" src="assets/images/linkedin.png" alt="LinkedIn Logo" />
+      </a>
+      <a target="_blank" href="https://github.com/CamdynR">
+        <img id="github" class="profiles" src="assets/images/github-logo.png" alt="GitHub Logo" />
+      </a>
+    </div>
+  </header>
 
-      <!-- Projects (With banners as links) -->
-      <div id="projects" class="gridCell">
-        <p class="cellTitle">Projects</p>
-        <ul id="listOfProjects">
-          <li id="pokemonBattleAssistant" class="project">
-            <a
-              href="https://pokemon-battle-assistant.herokuapp.com/"
-              target="_blank"
-            >
-              <!-- Top image is the large banner for desktop, bottom is a smaller version
+  <!-- Main content set up in a grid -->
+  <main id="canvas">
+    <!-- About Me -->
+    <div id="aboutMe" class="gridCell">
+      <p class="cellTitle">About Me</p>
+      <p id="aboutMeContent" class="content">
+        I'm a 4th year student pursuing a B.S. in Cognitive Science - Human
+        Computer Interaction with a minor in Computer Science at UC San Diego,
+        and I will be graduating in June 2020. During my time studying at UC
+        San Diego and participating in various projects, I've fallen in love
+        with not just Web Development, but Front-End Development as a whole.
+        Currently, I am the Webmaster of the UC San Diego Bookstore and I am
+        looking for a full-time job as a Front-End developer.
+      </p>
+    </div>
+
+    <!-- Projects (With banners as links) -->
+    <div id="projects" class="gridCell">
+      <p class="cellTitle">Projects</p>
+      <ul id="listOfProjects">
+        <li id="pokemonBattleAssistant" class="project">
+          <a href="https://pokemon-battle-assistant.herokuapp.com/" target="_blank">
+            <!-- Top image is the large banner for desktop, bottom is a smaller version
                 for mobile -->
-              <img
-                class="banner largeImage"
-                src="assets/images/pokeballBanner.jpg"
-                alt="Banner for Pokemon Battle Assistant Project"
-              />
-              <img
-                class="banner mobile"
-                src="assets/images/pokeballBannerMobile.jpg"
-                alt="Banner for Pokemon Battle Assistant Project"
-              />
-            </a>
-            <ul id="pbaList" class="projectDesc">
-              <li style="margin-bottom: 10px;">
-                Utilized Node.js and Google's Firebase to create a web
-                application that helps users choose which move to use in a
-                Pokémon battle.
-              </li>
-              <li>
-                Used AJAX requests to call the Firebase API to allow users to
-                create accounts securely and store their Pokémon.
-              </li>
-            </ul>
-          </li>
-          <li id="BothSidesWebApp" class="project">
-            <a
-              href="https://github.com/CamdynR/Cogs121/tree/master/static_files"
-              target="_blank"
-            >
-              <!-- Top image is the large banner for desktop, bottom is a smaller version
+            <img class="banner largeImage" src="assets/images/pokeballBanner.jpg"
+              alt="Banner for Pokemon Battle Assistant Project" />
+            <img class="banner mobile" src="assets/images/pokeballBannerMobile.jpg"
+              alt="Banner for Pokemon Battle Assistant Project" />
+          </a>
+          <ul id="pbaList" class="projectDesc">
+            <li style="margin-bottom: 10px;">
+              Utilized Node.js and Google's Firebase to create a web
+              application that helps users choose which move to use in a
+              Pokémon battle.
+            </li>
+            <li>
+              Used AJAX requests to call the Firebase API to allow users to
+              create accounts securely and store their Pokémon.
+            </li>
+          </ul>
+        </li>
+        <li id="BothSidesWebApp" class="project">
+          <a href="https://github.com/CamdynR/Cogs121/tree/master/static_files" target="_blank">
+            <!-- Top image is the large banner for desktop, bottom is a smaller version
                 for mobile -->
-              <img
-                class="banner lowerBanner largeImage"
-                src="assets/images/bothSidesBanner.jpg"
-                alt="Banner for Both Sides Web App"
-              />
-              <img
-                class="banner lowerBanner mobile"
-                src="assets/images/bothSidesBannerMobile.jpg"
-                alt="Banner for Both Sides Web App"
-              />
-            </a>
-            <ul id="bothSidesList" class="projectDesc">
-              <li>
-                Helped create a Node.js web app that uses News API and Google's
-                Firebase to provide users with left leaning and right leaning
-                articles for every major headline.
-              </li>
-            </ul>
-          </li>
-          <li id="sdhacks2019" class="project">
-            <a href="https://github.com/CamdynR/SDHacks2019" target="_blank">
-              <!-- Top image is the large banner for desktop, bottom is a smaller version
+            <img class="banner lowerBanner largeImage" src="assets/images/bothSidesBanner.jpg"
+              alt="Banner for Both Sides Web App" />
+            <img class="banner lowerBanner mobile" src="assets/images/bothSidesBannerMobile.jpg"
+              alt="Banner for Both Sides Web App" />
+          </a>
+          <ul id="bothSidesList" class="projectDesc">
+            <li>
+              Helped create a Node.js web app that uses News API and Google's
+              Firebase to provide users with left leaning and right leaning
+              articles for every major headline.
+            </li>
+          </ul>
+        </li>
+        <li id="sdhacks2019" class="project">
+          <a href="https://github.com/CamdynR/SDHacks2019" target="_blank">
+            <!-- Top image is the large banner for desktop, bottom is a smaller version
               for mobile -->
-              <img
-                class="banner lowerBanner largeImage"
-                src="assets/images/quizwizBanner.jpg"
-                alt="Banner for SD Hacks 2019 QuizWiz Project"
-              />
-              <img
-                class="banner lowerBanner mobile"
-                src="assets/images/quizwizBannerMobile.jpg"
-                alt="Banner for SD Hacks 2019 QuizWiz  Project"
-              />
-            </a>
-            <ul id="sdhacksList" class="projectDesc">
-              <li>
-                Used vanilla HTML/CSS/JavaScript alongside Amazon's Comprehend
-                NLP API to automatically generate fill in the blank style
-                quizzes from lecture notes.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+            <img class="banner lowerBanner largeImage" src="assets/images/quizwizBanner.jpg"
+              alt="Banner for SD Hacks 2019 QuizWiz Project" />
+            <img class="banner lowerBanner mobile" src="assets/images/quizwizBannerMobile.jpg"
+              alt="Banner for SD Hacks 2019 QuizWiz  Project" />
+          </a>
+          <ul id="sdhacksList" class="projectDesc">
+            <li>
+              Used vanilla HTML/CSS/JavaScript alongside Amazon's Comprehend
+              NLP API to automatically generate fill in the blank style
+              quizzes from lecture notes.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-      <!-- Work Experience -->
-      <div id="workExperience" class="gridCell">
-        <p class="cellTitle">Work Experience</p>
-        <ul id="workExperienceList">
-          <li id="webmaster" class="work">
-            <p id="webmasterTitle" class="jobTitle"><b>Webmaster</b></p>
-            <p id="webmasterStore" class="jobStore">
-              UCSD Bookstore (June 2016 - Present)
-            </p>
-            <ul id="webmasterList" class="jobDesc">
-              <li class="marginBottom">
-                Used the ASP.NET application framework alongside HTML, CSS, and
-                Javascript to update and maintain the UCSD Bookstore website.
-              </li>
-              <li class="marginBottom">
-                Prepared and photographed new product arrivals before editing
-                them in Photoshop for client-side use.
-              </li>
-              <li>
-                Regularly tested website appearance and uniformity across
-                various computer platforms and web browsers.
-              </li>
-            </ul>
-          </li>
-          <li id="DOthings" class="work">
-            <p id="DOthingsTitle" class="jobTitle"><b>Web Design Intern</b></p>
-            <p id="DOthingsStore" class="jobStore">
-              DOthings (June 2018 - August 2018)
-            </p>
-            <ul id="DOthingsList" class="jobDesc">
-              <li class="marginBottom">
-                Utilized HTML/CSS to write and develop new prototypes for the
-                client-side landing page.
-              </li>
-              <li class="marginBottom">
-                Hand sketched and used InDesign to rapidly iterate new
-                wireframes to hone in on a final design.
-              </li>
-              <li>
-                Used Photoshop to compose and model mock-ups of the final
-                product.
-              </li>
-            </ul>
-          </li>
-          <li id="bookstore" class="work">
-            <p id="bookstoreTitle" class="jobTitle">
-              <b>Customer Service Lead</b>
-            </p>
-            <p id="bookstoreStore" class="jobStore">
-              UCSD Bookstore (September 2016 - June 2019)
-            </p>
-            <ul id="bookstoreList" class="jobDesc">
-              <li class="marginBottom">
-                Assisted customers with returns, purchases, department charges,
-                or any other obstacle/question they had.
-              </li>
-              <li class="marginBottom">
-                Trained new cashiers and customer service associates on their
-                various duties and responsibilities.
-              </li>
-              <li>
-                Stood in as acting manager when the current one is not present.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+    <!-- Work Experience -->
+    <div id="workExperience" class="gridCell">
+      <p class="cellTitle">Work Experience</p>
+      <ul id="workExperienceList">
+        <li id="webmaster" class="work">
+          <p id="webmasterTitle" class="jobTitle"><b>Webmaster</b></p>
+          <p id="webmasterStore" class="jobStore">
+            UCSD Bookstore (June 2016 - Present)
+          </p>
+          <ul id="webmasterList" class="jobDesc">
+            <li class="marginBottom">
+              Used the ASP.NET application framework alongside HTML, CSS, and
+              Javascript to update and maintain the UCSD Bookstore website.
+            </li>
+            <li class="marginBottom">
+              Prepared and photographed new product arrivals before editing
+              them in Photoshop for client-side use.
+            </li>
+            <li>
+              Regularly tested website appearance and uniformity across
+              various computer platforms and web browsers.
+            </li>
+          </ul>
+        </li>
+        <li id="DOthings" class="work">
+          <p id="DOthingsTitle" class="jobTitle"><b>Web Design Intern</b></p>
+          <p id="DOthingsStore" class="jobStore">
+            DOthings (June 2018 - August 2018)
+          </p>
+          <ul id="DOthingsList" class="jobDesc">
+            <li class="marginBottom">
+              Utilized HTML/CSS to write and develop new prototypes for the
+              client-side landing page.
+            </li>
+            <li class="marginBottom">
+              Hand sketched and used InDesign to rapidly iterate new
+              wireframes to hone in on a final design.
+            </li>
+            <li>
+              Used Photoshop to compose and model mock-ups of the final
+              product.
+            </li>
+          </ul>
+        </li>
+        <li id="bookstore" class="work">
+          <p id="bookstoreTitle" class="jobTitle">
+            <b>Customer Service Lead</b>
+          </p>
+          <p id="bookstoreStore" class="jobStore">
+            UCSD Bookstore (September 2016 - June 2019)
+          </p>
+          <ul id="bookstoreList" class="jobDesc">
+            <li class="marginBottom">
+              Assisted customers with returns, purchases, department charges,
+              or any other obstacle/question they had.
+            </li>
+            <li class="marginBottom">
+              Trained new cashiers and customer service associates on their
+              various duties and responsibilities.
+            </li>
+            <li>
+              Stood in as acting manager when the current one is not present.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-      <!-- Personal Info -->
-      <div id="personalInfo" class="gridCell">
-        <p class="cellTitle" id="infoTitle">Personal Info</p>
-        <ul id="personalInfoList">
-          <li id="location">
-            <img
-              src="assets/images/location.png"
-              id="locationLogo"
-              class="infoImage"
-              alt="Pin on a Map Icon"
-            />
-            San Diego, CA
-          </li>
-          <li id="email">
-            <img
-              src="assets/images/email.png"
-              id="emailLogo"
-              class="infoImage"
-              alt="Envelope email Icon"
-            />
-            <a id="emailLink" href="mailto:rasque.camdyn@gmail.com"
-              >rasque.camdyn@gmail.com</a
-            >
-          </li>
-          <li id="resume">
-            <img
-              src="assets/images/resume.png"
-              id="resumeLogo"
-              class="infoImage"
-              alt="Resume Icon"
-            />
-            <a
-              id="resumeLink"
-              href="assets/files/CamdynRasque-Resume.pdf"
-              target="_blank"
-              >View Resume</a
-            >
-          </li>
-        </ul>
-      </div>
+    <!-- Personal Info -->
+    <div id="personalInfo" class="gridCell">
+      <p class="cellTitle" id="infoTitle">Personal Info</p>
+      <ul id="personalInfoList">
+        <li id="location">
+          <img src="assets/images/location.png" id="locationLogo" class="infoImage"
+            alt="Pin on a Map Icon" />
+          San Diego, CA
+        </li>
+        <li id="email">
+          <img src="assets/images/email.png" id="emailLogo" class="infoImage"
+            alt="Envelope email Icon" />
+          <a id="emailLink" href="mailto:rasque.camdyn@gmail.com">rasque.camdyn@gmail.com</a>
+        </li>
+        <li id="resume">
+          <img src="assets/images/resume.png" id="resumeLogo" class="infoImage" alt="Resume Icon" />
+          <a id="resumeLink" href="assets/files/CamdynRasque-Resume.pdf" target="_blank">View
+            Resume</a>
+        </li>
+      </ul>
+    </div>
 
-      <!-- Education -->
-      <div id="education" class="gridCell">
-        <p id="educationTitle" class="cellTitle">Education</p>
-        <img
-          id="gradHat"
-          src="assets/images/college.png"
-          alt="Graduation Hat Icon"
-        />
-        <ul id="educationList">
-          <li id="college">
-            <b>B.S. Cognitive Science -</b
-            ><span style="font-size:1rem;">Human Computer Interaction</span>
-          </li>
-          <li id="minor">Minor in Computer Science</li>
-          <li id="major">
-            <b>UC San Diego</b> -
-            <span style="color:#6b6b6b;font-size:1rem;">June 2020</span>
-          </li>
-        </ul>
-      </div>
+    <!-- Education -->
+    <div id="education" class="gridCell">
+      <p id="educationTitle" class="cellTitle">Education</p>
+      <img id="gradHat" src="assets/images/college.png" alt="Graduation Hat Icon" />
+      <ul id="educationList">
+        <li id="college">
+          <b>B.S. Cognitive Science -</b><span style="font-size:1rem;">Human Computer
+            Interaction</span>
+        </li>
+        <li id="minor">Minor in Computer Science</li>
+        <li id="major">
+          <b>UC San Diego</b> -
+          <span style="color:#6b6b6b;font-size:1rem;">June 2020</span>
+        </li>
+      </ul>
+    </div>
 
-      <!-- Technical Skills -->
-      <div id="technicalSkills" class="gridCell">
-        <p class="cellTitle" id="skillsTitle">Technical Skills</p>
-        <ul id="skillsList">
-          <li id="htmlSkill">
-            <p class="skillName"><b>HTML/CSS</b></p>
-            <!-- Outer gray bar -->
-            <div id="htmlProgress" class="progressBar pushBottom">
-              <!-- Inner green bar -->
-              <div id="htmlBar" class="bar"></div>
-            </div>
-          </li>
-          <li id="javascriptSkill">
-            <p class="skillName"><b>Javascript</b></p>
-            <!-- Outer gray bar -->
-            <div id="javascriptProgress" class="progressBar pushBottom">
-              <!-- Inner green bar -->
-              <div id="javascriptBar" class="bar"></div>
-            </div>
-          </li>
-          <li id="cplusplusSkill">
-            <p class="skillName"><b>C++</b></p>
-            <!-- Outer gray bar -->
-            <div id="cplusplusProgress" class="progressBar pushBottom">
-              <!-- Inner green bar -->
-              <div id="cplusplusBar" class="bar"></div>
-            </div>
-          </li>
-          <li id="javaSkill">
-            <p class="skillName"><b>Java</b></p>
-            <!-- Outer gray bar -->
-            <div id="javaProgress" class="progressBar pushBottom">
-              <!-- Inner green bar -->
-              <div id="javaBar" class="bar"></div>
-            </div>
-          </li>
-          <li id="nodeSkill">
-            <p class="skillName"><b>Node.js</b></p>
-            <!-- Outer gray bar -->
-            <div id="nodeProgress" class="progressBar pushBottom">
-              <!-- Inner green bar -->
-              <div id="nodeBar" class="bar"></div>
-            </div>
-          </li>
-          <li id="photoshopSkill">
-            <p class="skillName"><b>Adobe Photoshop</b></p>
-            <!-- Outer gray bar -->
-            <div id="photoshopProgress" class="progressBar">
-              <!-- Inner green bar -->
-              <div id="photoshopBar" class="bar"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </main>
+    <!-- Technical Skills -->
+    <div id="technicalSkills" class="gridCell">
+      <p class="cellTitle" id="skillsTitle">Technical Skills</p>
+      <ul id="skillsList">
+        <li id="htmlSkill">
+          <p class="skillName"><b>HTML/CSS</b></p>
+          <!-- Outer gray bar -->
+          <div id="htmlProgress" class="progressBar pushBottom">
+            <!-- Inner green bar -->
+            <div id="htmlBar" class="bar"></div>
+          </div>
+        </li>
+        <li id="javascriptSkill">
+          <p class="skillName"><b>Javascript</b></p>
+          <!-- Outer gray bar -->
+          <div id="javascriptProgress" class="progressBar pushBottom">
+            <!-- Inner green bar -->
+            <div id="javascriptBar" class="bar"></div>
+          </div>
+        </li>
+        <li id="cplusplusSkill">
+          <p class="skillName"><b>C++</b></p>
+          <!-- Outer gray bar -->
+          <div id="cplusplusProgress" class="progressBar pushBottom">
+            <!-- Inner green bar -->
+            <div id="cplusplusBar" class="bar"></div>
+          </div>
+        </li>
+        <li id="javaSkill">
+          <p class="skillName"><b>Java</b></p>
+          <!-- Outer gray bar -->
+          <div id="javaProgress" class="progressBar pushBottom">
+            <!-- Inner green bar -->
+            <div id="javaBar" class="bar"></div>
+          </div>
+        </li>
+        <li id="nodeSkill">
+          <p class="skillName"><b>Node.js</b></p>
+          <!-- Outer gray bar -->
+          <div id="nodeProgress" class="progressBar pushBottom">
+            <!-- Inner green bar -->
+            <div id="nodeBar" class="bar"></div>
+          </div>
+        </li>
+        <li id="photoshopSkill">
+          <p class="skillName"><b>Adobe Photoshop</b></p>
+          <!-- Outer gray bar -->
+          <div id="photoshopProgress" class="progressBar">
+            <!-- Inner green bar -->
+            <div id="photoshopBar" class="bar"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
 
-    <!-- Linking the Javascript file for the Skills Animation -->
-    <script src="public/JS/index.js"></script>
-  </body>
+  <!-- Linking the Javascript file for the Skills Animation -->
+  <script src="public/JS/index.js"></script>
+</body>
+
 </html>
